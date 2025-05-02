@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/api/songs";
+const API_URL = "https://backgeneromusical.onrender.com/api/songs";
 
 // POST - Agregar canción
 document.getElementById("songForm").addEventListener("submit", async (e) => {

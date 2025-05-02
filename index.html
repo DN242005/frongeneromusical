@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎵 Catálogo de Canciones</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="callrestapi.js" defer></script>
+</head>
+
+<body>
+  <h1> Catálogo de Canciones</h1>
+
+  <div class="card">
+    <h2>Agregar Nueva Canción</h2>
+    <form id="songForm">
+      <input type="text" id="song_name" placeholder="Nombre de la canción" required>
+      <input type="text" id="genre" placeholder="Género musical" required>
+      <input type="text" id="artist" placeholder="Cantante o grupo" required>
+      <input type="text" id="album" placeholder="Álbum" required>
+      <input type="text" id="author" placeholder="Autor" required>
+      <input type="text" id="duration" placeholder="Duración (ej: 03:25)" required>
+      <input type="text" id="cover_url" placeholder="URL de la portada" required>
+      <div class="buttons">
+        <button type="submit" class="green">Agregar Canción</button>
+        <button type="button" class="green" onclick="getSongs()">Cargar Canciones</button>
+      </div>
+    </form>
+  </div>
+
+  <div id="songsList"></div>
+</body>
+
+</html>
